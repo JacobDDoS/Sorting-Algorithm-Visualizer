@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import { mergeSort } from "../../sortingAlgorithms/mergeSort";
-import { quickSort } from "../../sortingAlgorithms/quickSort"
-import { bubbleSort } from "../../sortingAlgorithms/bubbleSort"
+import { mergeSort } from "./sortingAlgorithms/mergeSort";
+import { quickSort } from "./sortingAlgorithms/quickSort"
+import { bubbleSort } from "./sortingAlgorithms/bubbleSort"
 import {RangeStepInput} from 'react-range-step-input';
 
 // This is the main color of the array bars.
@@ -233,7 +233,7 @@ useEffect(()=> {
 }, [])
 
   return <> 
-  <div style={{marginTop: "65px", padding: "5px", overflowY: "hidden"}} className="array-container">
+  <div style={{marginTop: "65px", padding: "5px"}} className="array-container">
     <div style={{marginTop: `${605-maxArrayBarHeight}px` }}>
     {
         array.map((value, index) => {
